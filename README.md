@@ -1,6 +1,6 @@
 # luxus-noctalia-templates
 
-Personal Noctalia v5 app theme templates for the luxus fleet. Not part of [luxusAi](https://github.com/luxusAi/luxusAi) — app colors live here, Nix only installs Noctalia and compositor structure.
+Personal Noctalia v5 app theme templates for the luxus fleet. Not part of [luxusAi](https://github.com/luxus/luxusAi) — app colors live here, Nix only installs Noctalia and compositor structure.
 
 ## How this fits Noctalia
 
@@ -22,7 +22,7 @@ Reference layouts:
 ## Setup
 
 ```bash
-git clone https://github.com/luxusAi/luxus-noctalia-templates.git ~/src/luxus-noctalia-templates
+git clone https://github.com/luxus/luxus-noctalia-templates.git ~/src/luxus-noctalia-templates
 ```
 
 Copy the snippets from [`user-templates.example.toml`](user-templates.example.toml) into `~/.local/state/noctalia/settings.toml` under `[theme.templates.user.*]` (or merge into `~/.config/noctalia/config.toml` if you use that).
