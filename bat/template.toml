@@ -1,0 +1,8 @@
+[catalog.bat]
+name = "bat"
+category = "terminal"
+
+[templates.bat]
+input_path = "Noctalia.tmTheme"
+output_path = "$XDG_CONFIG_HOME/bat/themes/Noctalia.tmTheme"
+post_hook = "bash '{{ config_dir }}/apply.sh' apply"

@@ -1,0 +1,7 @@
+[catalog.lazygit]
+name = "Lazygit"
+category = "misc"
+
+[templates.lazygit]
+input_path = "noctalia-theme.yml"
+output_path = "$XDG_CONFIG_HOME/lazygit/noctalia-theme.yml"

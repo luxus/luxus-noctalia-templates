@@ -5,3 +5,16 @@
 input_path = "/home/luxus/src/luxus-noctalia-templates/mpv/mpv-colors.conf"
 output_path = "$XDG_CONFIG_HOME/mpv/noctalia-colors.conf"
 post_hook = "bash '/home/luxus/src/luxus-noctalia-templates/mpv/apply.sh' apply"
+
+[theme.templates.user.bat]
+input_path = "/home/luxus/src/luxus-noctalia-templates/bat/Noctalia.tmTheme"
+output_path = "$XDG_CONFIG_HOME/bat/themes/Noctalia.tmTheme"
+post_hook = "bash '/home/luxus/src/luxus-noctalia-templates/bat/apply.sh' apply"
+
+[theme.templates.user.atuin]
+input_path = "/home/luxus/src/luxus-noctalia-templates/atuin/noctalia.toml"
+output_path = "$XDG_CONFIG_HOME/atuin/themes/noctalia.toml"
+
+[theme.templates.user.lazygit]
+input_path = "/home/luxus/src/luxus-noctalia-templates/lazygit/noctalia-theme.yml"
+output_path = "$XDG_CONFIG_HOME/lazygit/noctalia-theme.yml"

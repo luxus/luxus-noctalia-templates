@@ -45,9 +45,22 @@ Re-apply after palette changes: toggle a template off/on in Settings, or restart
 
 ## Templates in this repo
 
-| App | Why here |
-|-----|----------|
-| [mpv](mpv/) | Not in community catalog; fleet uses `rum.programs.mpv` on lea |
+| App | Why here | Fleet wiring |
+|-----|----------|--------------|
+| [mpv](mpv/) | Not in community catalog | `rum.programs.mpv` |
+| [bat](bat/) | Not in community catalog | `packages` in `hjem/profiles/base.nix` |
+| [atuin](atuin/) | Not in community catalog | `theme.name = "noctalia"` in `hjem/apps/atuin.nix` |
+| [lazygit](lazygit/) | Not in community catalog | `lg` alias merges theme via `LG_CONFIG_FILE` in `hjem/apps/terminal-cli.nix` |
+
+### Lazygit merge
+
+Lazygit loads multiple config files when comma-separated. The rendered `noctalia-theme.yml` is merged with your base `config.yml`:
+
+```bash
+LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$XDG_CONFIG_HOME/lazygit/noctalia-theme.yml" lazygit
+```
+
+The fleet `lg` alias sets this automatically.
 
 Apps already covered elsewhere — use those instead of duplicating:
 

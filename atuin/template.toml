@@ -1,0 +1,7 @@
+[catalog.atuin]
+name = "Atuin"
+category = "terminal"
+
+[templates.atuin]
+input_path = "noctalia.toml"
+output_path = "$XDG_CONFIG_HOME/atuin/themes/noctalia.toml"
