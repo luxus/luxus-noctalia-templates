@@ -1,0 +1,8 @@
+[catalog.mpv]
+name = "mpv"
+category = "misc"
+
+[templates.mpv]
+input_path = "mpv-colors.conf"
+output_path = "$XDG_CONFIG_HOME/mpv/noctalia-colors.conf"
+post_hook = "bash '{{ config_dir }}/apply.sh' apply"

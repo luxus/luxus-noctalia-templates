@@ -1,0 +1,7 @@
+# Merge these blocks into ~/.local/state/noctalia/settings.toml (or config.toml).
+# Paths assume: ~/src/luxus-noctalia-templates
+
+[theme.templates.user.mpv]
+input_path = "/home/luxus/src/luxus-noctalia-templates/mpv/mpv-colors.conf"
+output_path = "$XDG_CONFIG_HOME/mpv/noctalia-colors.conf"
+post_hook = "bash '/home/luxus/src/luxus-noctalia-templates/mpv/apply.sh' apply"
